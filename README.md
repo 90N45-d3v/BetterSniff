@@ -1,5 +1,5 @@
 # BetterSniff
-With this script you can host an access point with [create_ap](https://github.com/oblique/create_ap) from @oblique and sniff all traffic with [Bettercap](https://www.bettercap.org/) automatically.
+With this script you can host an access point with [create_ap](https://github.com/oblique/create_ap) by [@oblique](https://github.com/oblique) and sniff all traffic with [Bettercap](https://www.bettercap.org/) automatically.
 If you are connected to an existing network and want to sniff some traffic there, you can do that too.
 
 ## Features
@@ -18,3 +18,6 @@ sudo chmod +x BetterSniff.sh
 # and run it!
 sudo bash BetterSniff.sh
 ```
+## Some information
+I know, that this code could be better. 
+If you have some improvements, errors or other things to say, just make a fork/pull-request or open an issue.
