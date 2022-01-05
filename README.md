@@ -18,6 +18,6 @@ sudo chmod +x BetterSniff.sh
 # and run it!
 sudo bash BetterSniff.sh
 ```
-## Some information
+### Some information
 I know, that this code could be better. 
 If you have some improvements, errors or other things to say, just make a fork/pull-request or open an issue.
