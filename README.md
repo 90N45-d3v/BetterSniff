@@ -1,4 +1,4 @@
-<p align="center">BetterSniff</p>
+<h1 align="center">BetterSniff</h1>
 With this script you can host an access point with [create_ap](https://github.com/oblique/create_ap) and sniff all traffic with [Bettercap](https://www.bettercap.org/) automatically
 or if you are connected to an existing network and want to sniff some traffic there, you can do that too.
 
