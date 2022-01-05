@@ -5,7 +5,8 @@ If you are connected to an existing network and want to sniff some traffic there
 ## Features
 - Sniff domains your victim is visiting (full path location if request is http)
 - Inject customizable javascript into every http website
-- probe-request scanner (only rogue AP mode)
+- Probe-request scanner (only rogue AP mode)
+- Create configurable AP (only rogue AP mode)
 - ARP-spoofing for beeing the mitm (only client mode)
 
 ## Installation
