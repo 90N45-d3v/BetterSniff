@@ -14,5 +14,6 @@ For me it works like a charm on kali (all needed tools are preinstalled), if you
 git clone https://github.com/90N45-d3v/BetterSniff.git
 cd BetterSniff
 sudo chmod +x BetterSniff.sh
+# and run it!
 sudo bash BetterSniff.sh
 ```
