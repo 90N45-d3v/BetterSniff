@@ -19,6 +19,14 @@ sudo chmod +x BetterSniff.sh
 # and run it!
 sudo bash BetterSniff.sh
 ```
+
+## Working on...
+- Channel configuration (only rogue AP mode)
+- Install.sh for dependencies
+- better overview for probe-request scanner
+- deauth for more probe-requests (only rogue AP mode)
+- Support for 5Ghz and/or 2.4Ghz
+
 ### Some information
 I know, that this code could be better. 
 If you have some improvements, errors or other things to say, just make a fork/pull-request or open an issue.
