@@ -11,12 +11,16 @@ If you are connected to an existing network and want to sniff some traffic there
 - ARP-spoofing for beeing the mitm (only client mode)
 
 ## Installation
-For me it works like a charm on kali (all needed tools are preinstalled), if you want to try running it on another linux distro, you maybe need to install some additional dependencies.
-But now the installation guide:
+For me it works like a charm on kali (all needed tools are preinstalled). If you want to run it for example on a raspberry pi with a debian based system, it should work too.
+Now the installation guide:
 ```
 git clone https://github.com/90N45-d3v/BetterSniff.git
 cd BetterSniff
+# give scripts permissions
+sudo chmod +x requirements.sh
 sudo chmod +x BetterSniff.sh
+# install dependencies
+sudo bash requirements.sh
 # and run it!
 sudo bash BetterSniff.sh
 ```
