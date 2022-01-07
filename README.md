@@ -23,7 +23,6 @@ sudo bash BetterSniff.sh
 
 ## Working on...
 - Channel configuration (only rogue AP mode)
-- Install.sh for dependencies
 - better overview for probe-request scanner
 - deauth for more probe-requests (only rogue AP mode)
 - Support for 5Ghz and/or 2.4Ghz
