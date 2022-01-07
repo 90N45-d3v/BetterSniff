@@ -17,10 +17,8 @@ Now the installation guide:
 ```
 git clone https://github.com/90N45-d3v/BetterSniff.git
 cd BetterSniff
-# give scripts permissions
 sudo chmod +x requirements.sh
 sudo chmod +x BetterSniff.sh
-# install dependencies
 sudo bash requirements.sh
 # and run it!
 sudo bash BetterSniff.sh
