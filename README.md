@@ -1,6 +1,5 @@
 ![bettersniff_logo](https://user-images.githubusercontent.com/79598596/148476254-b03924ae-5baa-499b-9878-8fab1919d655.png)
 [![Updated Badge](https://badges.pufler.dev/updated/90N45-d3v/BetterSniff)](https://badges.pufler.dev)
-[![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
 
 With this script you can host an access point with [create_ap](https://github.com/oblique/create_ap) by [@oblique](https://github.com/oblique) and sniff all traffic with [Bettercap](https://www.bettercap.org/) automatically.
 If you are connected to an existing network and want to sniff some traffic there, you can do that too.
