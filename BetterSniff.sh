@@ -35,23 +35,6 @@ echo "|____/ \___|\__|\__\___|_| |_____/|_| |_|_|_| |_|"
 echo -e "${clean} by 90N45-d3v"
 }
 
-printf "\n${red}[*] ${lightred}Checking if tool is installed: create_ap..."
-create_ap_dir="create_ap/"
-if [ -d "$create_ap_dir" ]
-then
-sleep 0.2
-printf "\n${red}[*] ${lightred}Create_ap already installed..."
-else
-sleep 0.2
-printf "\n${red}[*] ${lightred}Create_ap is not installed yet..."
-sleep 0.2
-printf "\n${red}[*] ${lightred}Downloading/Installing create_ap from GitHub...${clean}\n"
-git clone https://github.com/oblique/create_ap
-cd create_ap
-make install
-sleep 2
-fi
-
 clear
 print_banner
 sleep 0.5
