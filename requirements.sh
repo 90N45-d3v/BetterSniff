@@ -1,3 +1,6 @@
+#!/bin/bash
+# AUTHOR: 90N45
+
 cyan='\e[1;36m'
 red='\e[1;31m'
 lightred='\e[0;31m'
