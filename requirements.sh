@@ -58,5 +58,5 @@ apt install wireless-tools aircrack-ng tshark
 sleep 1
 clear
 print_banner_quik
-printf "\n${white}All needed dependencies were installed..."
+printf "\n${white}All needed dependencies were installed...\n\n"
 sleep 2
