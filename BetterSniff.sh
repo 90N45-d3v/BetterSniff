@@ -260,6 +260,24 @@ fi
 clear
 print_banner_quik
 sleep 0.2
+printf "\n\n${red}[*] ${lightred}Checking network connectivity..."
+network_check=$(iwconfig $interface | grep off/any -c)
+slepp 0.2
+if [ $network_check = 1 ]
+then
+printf "\n${red}[*] ${lightred}Not connected to any network..."
+sleep 0.2
+printf "\n${red}[*] ${lightred}Scanning for networks you can connect to...${clean}\n"
+sleep 0.2
+nmcli dev wifi list ifname ${interface} --rescan yes
+printf "\n\n${white} | Choose your network to sniff on: ${clean}"
+read -p "" network
+printf "\n${white}"
+nmcli dev wifi connect "${network}" --ask
+fi
+clear
+print_banner_quik
+sleep 0.2
 printf "\n${purple}[1] ${lightpurple}180°-JS\n"
 sleep 0.2
 printf "\n${red}[2] ${lightred}Custom\n"
