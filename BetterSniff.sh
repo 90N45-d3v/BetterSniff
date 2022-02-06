@@ -166,6 +166,13 @@ sleep 1
 clear
 print_banner_quik
 sleep 0.2
+no_network_check=$(iwconfig $interface | grep off/any -c)
+if [ $no_network_check = 0 ]
+then
+printf "\n${red}[*] ${lightred}Disconnecting ${interface} from network..."
+nmcli dev disconnect $interface > /dev/null
+sleep 3
+fi
 printf "\n${red}[*] ${lightred}Creating rogue AP on ${interface} as ${ssid}...\n\n${cyan}"
 create_ap ${interface} ${net_interface} ${ssid} -c ${channel} --daemon --no-virt > /dev/null
 sleep 10
@@ -194,8 +201,14 @@ sleep 1
 clear
 print_banner_quik
 sleep 0.2
+no_network_check=$(iwconfig $interface | grep off/any -c)
+if [ $no_network_check = 0 ]
+then
+printf "\n${red}[*] ${lightred}Disconnecting ${interface} from network..."
+nmcli dev disconnect $interface > /dev/null
+sleep 3
+fi
 printf "\n${red}[*] ${lightred}Creating rogue AP on ${interface} as ${ssid}...\n\n${cyan}"
-
 sleep 0.2
 printf "\n${red}[*] ${lightred}Starting Bettercap as sniffer on ${interface}...\n\n${cyan}"
 sleep 1
@@ -218,6 +231,13 @@ sleep 1
 clear
 print_banner_quik
 sleep 0.2
+no_network_check=$(iwconfig $interface | grep off/any -c)
+if [ $no_network_check = 0 ]
+then
+printf "\n${red}[*] ${lightred}Disconnecting ${interface} from network..."
+nmcli dev disconnect $interface > /dev/null
+sleep 3
+fi
 printf "\n${red}[*] ${lightred}Creating rogue AP on ${interface} as ${ssid}...\n\n${cyan}"
 create_ap ${interface} ${net_interface} ${ssid} --daemon --no-virt > /dev/null
 sleep 10
