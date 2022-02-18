@@ -1,4 +1,4 @@
-![bettersniff_logo](https://user-images.githubusercontent.com/79598596/148476254-b03924ae-5baa-499b-9878-8fab1919d655.png)
+![bettersniff-banner1536px](https://user-images.githubusercontent.com/79598596/154769341-1c379aeb-c39e-4c53-9344-8ef8c85b7b92.png)
 <p align="center">
   <img src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg">
   <img src="https://img.shields.io/github/license/90N45-d3v/BetterSniff.svg">
