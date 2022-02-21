@@ -49,8 +49,17 @@ make install
 sleep 1
 clear
 print_banner_quik
-printf "\n${white}Installing dependencies..."
-printf "\n\n${red}[*] ${lightred}Dependencies are: wireless-tools, aircrack-ng, tshark, create_ap"
+printf "\n${white}Installing dependencies for create_ap..."
+printf "\n\n${red}[*] ${lightred}Dependencies are: dnsmasq, hostapd"
+sleep 0.2
+printf "\n\n${red}[*] ${lightred}Downloading/Installing dnsmasq and hostapd from APT...${clean}\n"
+sleep 0.2
+apt install dnsmasq hostapd
+sleep 1
+clear
+print_banner_quik
+printf "\n${white}Installing dependencies for BetterSniff..."
+printf "\n\n${red}[*] ${lightred}Dependencies are: wireless-tools, aircrack-ng, tshark"
 sleep 0.2
 printf "\n\n${red}[*] ${lightred}Downloading/Installing wireless-tools, aircrack-ng and tshark from APT...${clean}\n"
 sleep 0.2
