@@ -30,7 +30,6 @@ sudo bash BetterSniff.sh
 - New mode: EvilTwin (clone existing WPA2-AP)
 - Log-file from sniffed traffic till next usage
 - deauth for more probe-requests (only rogue AP mode)
-- Support for 5Ghz and/or 2.4Ghz
 
 ### Some information
 I know, that this code could be better. 
