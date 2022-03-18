@@ -11,6 +11,7 @@ If you are connected to an existing network and want to sniff some traffic there
 ## Features
 - Sniff domains your victim is visiting (full path location if request is http)
 - Inject customizable javascript into every http website
+- Sniffed traffic will be logged for later analysis
 - Probe-request scanner (only rogue AP mode)
 - Create configurable AP (only rogue AP mode)
 - ARP-spoofing for beeing the mitm (only client mode)
@@ -24,6 +25,18 @@ cd BetterSniff
 sudo bash requirements.sh
 # and run it!
 sudo bash BetterSniff.sh
+```
+
+## Analyze your traffic later
+If you sniffed some traffic with BetterSniff once, there will be a loot file (loot.pcap) for later analysis.
+You can take a look at the sniffed traffic with following commands:
+```
+# start bettercap
+sudo bettercap
+# set loot.pcap as source for net.sniff
+set net.sniff.source loot.pcap
+# take a look at it
+net.sniff on
 ```
 
 ## Working on...
