@@ -9,7 +9,8 @@ With this script you can host an access point with [create_ap](https://github.co
 If you are connected to an existing network and want to sniff some traffic there, you can do that too.
 
 ## Features
-- Sniff domains your victim is visiting (full path location if request is http)
+- Sniff domains your victim is visiting/pinging (full path location if request is not encrypted with SSL/TLS)
+- Sniff unencrypted traffic from sources like telnet, SMTP or FTP
 - Inject customizable javascript into every http website
 - Sniffed traffic will be logged for later analysis
 - Probe-request scanner (only rogue AP mode)
