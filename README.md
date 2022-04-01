@@ -46,4 +46,4 @@ net.sniff on
 
 ### Some information
 I know, that this code could be better. 
-If you have some improvements, errors or other things to say, just make a fork/pull-request or open an issue.
+If you have some improvements, errors or other things to say, just make a fork, pull-request, open an issue or contact me on twitter [@90N45](https://twitter.com/90N45).
