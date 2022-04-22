@@ -10,7 +10,7 @@ If you are connected to an existing network and want to sniff some traffic there
 
 ## Features
 - Sniff domains your victim is visiting/pinging (full path location if request is not encrypted with SSL/TLS)
-- Sniff unencrypted traffic from sources like telnet, SMTP or FTP
+- Sniff unencrypted credentials from sources like telnet, SMTP or FTP
 - Inject customizable javascript into every http website
 - Sniffed traffic will be logged for later analysis
 - Probe-request scanner (only rogue AP mode)
@@ -42,6 +42,7 @@ net.sniff on
 
 ## Working on...
 - New mode: EvilTwin (clone existing WPA2-AP)
+- Settings for easily handling the mapping of domains to a custom IP address ([Bettercap's DNS spoofer](https://www.bettercap.org/modules/ethernet/spoofers/dns.spoof/))
 - deauth for more probe-requests (only rogue AP mode)
 
 ### Some information
